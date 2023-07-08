@@ -1,0 +1,3 @@
+cp /etc/apt/sources.list /etc/apt/sources.list.Backup
+nano /etc/apt/sources.list
+apt update -y

@@ -1,0 +1,16 @@
+در مرحله اول فایل هاست رو درست میکنیم
+sudo nano /etc/hostname
+هر چی هست پاک کردم این خط رو بهش اضافه کردم====>  
+127.0.0.1 bigpython
+ویرایش فایل hosts:
+sudo nano /etc/hosts
+هر چی بود پاک کردم و این رو اضافه کردم
+127.0.0.1 bigpython
+
+اکنون باید بتوانید دستور sudo apt update && sudo apt upgrade -y را بدون خطا اجرا کنید.
+
+اگر در به روز رسانی بسته ها با خطای "Broken packages" مواجه شدید، می توانید با اجرای دستور زیر سعی کنید آن را برطرف کنید:
+
+sudo apt install --reinstall libtss2-esys0
+
+

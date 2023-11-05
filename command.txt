@@ -1,3 +1,4 @@
+apt install nano
 cp /etc/apt/sources.list /etc/apt/sources.list.Backup
 cd /etc/apt
 rm sources.list

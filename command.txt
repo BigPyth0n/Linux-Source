@@ -4,4 +4,7 @@ cd /etc/apt
 rm sources.list
 nano /etc/apt/sources.list
 # Go to source.list & copy to new 
-apt update -y
+apt update -y && apt upgrade -y
+# برای پنل SSH
+asudo apt -y install nethogs
+

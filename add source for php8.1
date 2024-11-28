@@ -1,0 +1,18 @@
+تنظیم مخزن به درستی:
+اضافه کردن مخزن به صورت صحیح: به جای اجرای دستور deb ... در خط فرمان، از echo برای اضافه کردن به فایل مخزن استفاده کنید:
+
+bash
+Copy code
+echo "deb http://ppa.launchpad.net/ondrej/php/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/ondrej-php.list
+افزودن کلید GPG مخزن: کلید مربوطه را اضافه کنید:
+
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C
+به‌روزرسانی مخازن: حالا مخازن خود را به‌روز کنید:
+
+
+sudo apt update
+نصب PHP 8.1: سپس بسته‌های موردنیاز را نصب کنید:
+
+
+sudo apt install -y php8.1 php8.1-mysql php8.1-xml php8.1-curl
